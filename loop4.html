@@ -1,0 +1,35 @@
+<!--Now for any input string, instead of displaying the indexes of that string in reverse order, display the characters at those indexes.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>For Loop</title>
+</head>
+<body>
+    <h1>For Loop</h1>
+
+    <div id="output"></div>
+
+    <script>
+    "use strict";
+
+    var $ = function(id) { return document.getElementById(id); };
+
+    var input = prompt("Enter a String");
+
+    var string = input.length;
+
+    var out = "";
+
+    // for loop
+    for (var i = string - 1; i >= 0; i--) {
+        out += input.charAt(i) + " ";
+    }
+
+    $("output").innerHTML = out;
+
+    </script>
+
+</body>
+</html>
