@@ -1,0 +1,31 @@
+<!--Write a for loop that displays the numbers 0 through 9-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>For Loop</title>
+</head>
+<body>
+    <h1>For Loop</h1>
+
+    <div id="output"></div>
+
+    <script>
+    "use strict";
+
+    var $ = function(id) { return document.getElementById(id); };
+
+    var out = "";
+
+    // for loop
+    for (var i = 0; i < 10; i++) {
+        out += i + " ";
+    }
+
+    $("output").innerHTML = out;
+
+    </script>
+
+</body>
+</html>
