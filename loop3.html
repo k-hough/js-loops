@@ -1,0 +1,35 @@
+<!--for any input string, display the indexes of that string in reverse order. So for the string "keith", the output would be 4 3 2 1 0. For the string "testing", the output would be 6 5 4 3 2 1 0.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>For Loop</title>
+</head>
+<body>
+    <h1>For Loop</h1>
+
+    <div id="output"></div>
+
+    <script>
+    "use strict";
+
+    var $ = function(id) { return document.getElementById(id); };
+
+    var input = prompt("Enter a String");
+
+    var string = input.length;
+
+    var out = "";
+
+    // for loop
+    for (var i = string - 1; i >= 0; i--) {
+        out += i + " ";
+    }
+
+    $("output").innerHTML = out;
+
+    </script>
+
+</body>
+</html>
