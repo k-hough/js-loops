@@ -1,0 +1,33 @@
+<!--Write a function that takes 1 arg, an integer. Let's say the integer is n. Return an array that contains the numbers from 0 to n. For example, if n is 5, the returned array will have the elements 0,1,2,3,4,5.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Exercise</title>
+</head>
+<body>
+
+    <div id="output"></div>
+
+    <script>
+    "use strict";
+
+    var $ = function(id) { return document.getElementById(id); };
+
+    var input = parseInt(prompt("Enter a Number"));
+
+    var numArray = function(inputNum) {
+        var answer = [];
+        for (var i = 0; i <= inputNum ; i++) {
+            answer[i] = i;
+        }
+        return answer;
+    };
+
+    $("output").innerHTML = numArray(input);
+
+    </script>
+
+</body>
+</html>
