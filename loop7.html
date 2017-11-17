@@ -1,0 +1,33 @@
+<!--Write a function that takes 1 arg, an integer. Let's say the integer is n. Return a string that contains the numbers from n to 1 separated by a space. For example, if n is 5, the returned string will be "5 4 3 2 1 ".-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Exercise</title>
+</head>
+<body>
+
+    <div id="output"></div>
+
+    <script>
+    "use strict";
+
+    var $ = function(id) { return document.getElementById(id); };
+
+    var input = parseInt(prompt("Enter a Number"));
+
+    var countdown = function(inputNum) {
+        var answer = "";
+        for (var i = inputNum; i > 0; i--) {
+            answer += i + " ";
+        }
+        return answer;
+    };
+
+    $("output").innerHTML = countdown(input);
+
+    </script>
+
+</body>
+</html>
