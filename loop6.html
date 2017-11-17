@@ -1,0 +1,33 @@
+<!--Write a function that takes 1 arg, an integer. Let's say the integer is n. Return a string that contains numbers from 0 to 2 times n separated by a space, with each number doubled. For example, if n is 5, the returned string will be "0 2 4 6 8 10 ".-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Exercise</title>
+</head>
+<body>
+
+    <div id="output"></div>
+
+    <script>
+    "use strict";
+
+    var $ = function(id) { return document.getElementById(id); };
+
+    var input = parseInt(prompt("Enter a Number"));
+
+    var evenNum = function(inputNum) {
+        var answer = "";
+        for (var num = 0; num <= inputNum; num++) {
+            answer += (2 * num) + " ";
+        }
+        return answer;
+    };
+
+    $("output").innerHTML = evenNum(input);
+
+    </script>
+
+</body>
+</html>
