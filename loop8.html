@@ -1,0 +1,35 @@
+<!--Write a function that takes 2 args. The 1st arg is a string with substrings separated by a delimiter character. The 2nd arg is the delimiter character. Return an array that contains 1 element. The value of that element is the 1st substring separated by the delimiter character. Don't use str.split().
+
+For example, if the 1st arg is "buy groceries|do homework|pay bills" and the 2nd arg is "|", The returned array will have 1 element with the value "buy groceries".-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Exercise</title>
+</head>
+<body>
+
+    <div id="output"></div>
+
+    <script>
+    "use strict";
+
+    var $ = function(id) { return document.getElementById(id); };
+
+    var input = parseInt(prompt("Enter a Number"));
+
+    var numArray = function(inputNum) {
+        var answer = [];
+        for (var i = inputNum; i >= 0; i--) { //5
+            answer[i] = i;
+        }
+        return answer.reverse();
+    };
+
+    $("output").innerHTML = numArray(input);
+
+    </script>
+
+</body>
+</html>
